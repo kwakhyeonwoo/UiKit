@@ -1,3 +1,5 @@
+대부분 ViewController.swift 폴더에 작성 
+
 translatesAutoresizingMaskIntoConstraints = false -> superview가 변함에따라 subview의 크기는 어떻게 정할것이냐 물어보는 것, 이와 동일한 기능을 하는 Autolayout이 같이 사용되면 충돌 할 수 있음. 따라서 false로 지정하는게 일반적. 
 
 
