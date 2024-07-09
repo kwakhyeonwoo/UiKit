@@ -1,0 +1,9 @@
+translatesAutoresizingMaskIntoConstraints = false -> superview가 변함에따라 subview의 크기는 어떻게 정할것이냐 물어보는 것, 이와 동일한 기능을 하는 Autolayout이 같이 사용되면 충돌 할 수 있음. 따라서 false로 지정하는게 일반적. 
+
+
+//X축과 Y축을 초기값으로 지정하면서 가운데에 배치를 하겠다. 
+centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+
+UiLabel() 메소드를 사용함으로 텍스트를 사용하겠다 선언 
+텍스트 입력시 필요한 메소드 UiLabel() 
