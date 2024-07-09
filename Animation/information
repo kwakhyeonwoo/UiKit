@@ -1,0 +1,10 @@
+ViewDidLoad()에서 view.addSubView(animationView)로 View에서 animation View가 감싸고 있는데 
+
+animationView.play 메소드에서 클로저 값을 (finish)로 받고 있으므로 finish가 실행이 되면 
+self.animationView.removeSuperView()가 실행이 된다.
+이때 animationView에서 SuperView를 제거하므로 View를 감싸고 있는 animationView가 제거가 된다. 
+
+CGRect - 사각형을 만든다 (x축, y축, witdh: , height: 설정)
+
+removeFromSuperview()가 제거가 되고 
+self.view.addSubview(self.titleLabel)로 Text부분 실행 
