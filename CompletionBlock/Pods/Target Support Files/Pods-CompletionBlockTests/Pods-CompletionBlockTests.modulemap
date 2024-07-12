@@ -1,0 +1,6 @@
+framework module Pods_CompletionBlockTests {
+  umbrella header "Pods-CompletionBlockTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
