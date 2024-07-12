@@ -1,0 +1,6 @@
+어플에 광고를 로드 시키는 프로젝트로 어플 하단부에 광고가 로드된다.
+
+bannerView.delegate = self
+delegate을 배너뷰에 연결을 해서 self를 통해 보여주는것이므로 delegate이 빠지면 뷰에 광고가 보이지 않는다 
+
+배너뷰 연결은 https://developers.google.com/admob/ios/banner?hl=ko이 링크를 활용해서 함 
