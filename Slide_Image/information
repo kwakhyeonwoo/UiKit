@@ -1,0 +1,11 @@
+여러 이미지를 화면에 나오게 하고 시간이지남, 화살표 버튼을 클릭해서 다른 이미를 보여주는 프로젝트
+
+버튼을 이동할 때 왼쪽은 괜찮았지만 오른쪽 버튼을 클릭해서 이미지가 끝나서 새 배열을 초기화하지 않으면 오버플로가 발생해서 앱이 멈춤.
+이를 막기위해 사진 배열이 마지막에 도달했으면 이미지를 0으로 초기화 해준다. 그게 아니면 이미지를 +1씩 인덱스를 증가시켜준다 
+
+if(self.myPageControl.currentPage == self.imageNames.count - 1){
+            self.myPageControl.currentPage = 0
+        } else{
+            self.myPageControl.currentPage = self.myPageControl.currentPage + 1
+        }
+를 통해 이미지 배열이 끝까지 도달했어도 0으로 초기화하면서 무한 이미지 슬라이드가 가능함 
