@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pagerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="py3-Rv-6S0" userLabel="pagerContainer">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4g-e2-ISx" userLabel="pagerView" customClass="FSPagerView" customModule="FSPagerView">
+                                        <rect key="frame" x="0.0" y="229.66666666666669" width="393" height="300.00000000000006"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="aE9-v1-sLw"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="fgP-3Y-lkU"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rid-ns-1PS" userLabel="pageControl" customClass="FSPageControl" customModule="FSPagerView">
+                                        <rect key="frame" x="30" y="544.66666666666663" width="333" height="40"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="BLR-eQ-L02"/>
+                                            <constraint firstAttribute="height" constant="40" id="ZkS-YG-GZN"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstItem="Q4g-e2-ISx" firstAttribute="centerY" secondItem="py3-Rv-6S0" secondAttribute="centerY" id="2yh-C3-t41"/>
+                                    <constraint firstItem="rid-ns-1PS" firstAttribute="top" secondItem="Q4g-e2-ISx" secondAttribute="bottom" constant="15" id="3Rm-xX-zol"/>
+                                    <constraint firstItem="Q4g-e2-ISx" firstAttribute="leading" secondItem="py3-Rv-6S0" secondAttribute="leading" id="FPl-ui-LAj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q4g-e2-ISx" secondAttribute="trailing" id="I5X-fd-ShK"/>
+                                    <constraint firstItem="rid-ns-1PS" firstAttribute="leading" secondItem="py3-Rv-6S0" secondAttribute="leading" constant="30" id="XrO-d8-rKC"/>
+                                    <constraint firstAttribute="trailing" secondItem="rid-ns-1PS" secondAttribute="trailing" constant="30" id="eSS-7g-cXG"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM1-ay-SRS">
+                                <rect key="frame" x="30" y="411" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4dr-Ii-egJ"/>
+                                    <constraint firstAttribute="height" constant="30" id="XsS-OM-08N"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="onLeftButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YJK-6U-wI1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTg-ak-h2j">
+                                <rect key="frame" x="333" y="411" width="30" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="XVV-DF-Zmb"/>
+                                    <constraint firstAttribute="height" constant="30" id="dFo-I7-7Ex"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="chevron.right" catalog="system"/>
+                                <connections>
+                                    <action selector="onrightButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TVB-Do-Mrp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="py3-Rv-6S0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="47g-7J-H3y"/>
+                            <constraint firstItem="kM1-ay-SRS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="4Ig-kF-oBD"/>
+                            <constraint firstItem="py3-Rv-6S0" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dO2-BB-Kbd"/>
+                            <constraint firstItem="py3-Rv-6S0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dhN-bo-mPv"/>
+                            <constraint firstItem="py3-Rv-6S0" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eLx-Cr-AOz"/>
+                            <constraint firstItem="nTg-ak-h2j" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fhJ-YK-25z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nTg-ak-h2j" secondAttribute="trailing" constant="30" id="t5m-aW-wW3"/>
+                            <constraint firstItem="kM1-ay-SRS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wMa-j7-UlV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leftButton" destination="kM1-ay-SRS" id="9Be-0Q-QGa"/>
+                        <outlet property="myPageControl" destination="rid-ns-1PS" id="MkT-fO-Pd2"/>
+                        <outlet property="myPagerView" destination="Q4g-e2-ISx" id="DbO-uR-SVn"/>
+                        <outlet property="rightButton" destination="nTg-ak-h2j" id="Aai-hK-M5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.95419847328243" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

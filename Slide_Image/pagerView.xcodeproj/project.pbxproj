@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ADEAD41F5CC2C87C01F21F2 /* Pods_pagerViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E31109B4D87D89785DFEDC1 /* Pods_pagerViewTests.framework */; };
+		5CD82EE98D9E54526556C235 /* Pods_pagerView_pagerViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53961311C4C62AAF19619A99 /* Pods_pagerView_pagerViewUITests.framework */; };
+		67F6FA902C453882000610B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6FA8F2C453882000610B2 /* AppDelegate.swift */; };
+		67F6FA922C453882000610B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6FA912C453882000610B2 /* SceneDelegate.swift */; };
+		67F6FA942C453882000610B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6FA932C453882000610B2 /* ViewController.swift */; };
+		67F6FA972C453882000610B2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FA962C453882000610B2 /* Base */; };
+		67F6FA992C453884000610B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FA982C453884000610B2 /* Assets.xcassets */; };
+		67F6FA9C2C453884000610B2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FA9B2C453884000610B2 /* Base */; };
+		67F6FAA72C453884000610B2 /* pagerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6FAA62C453884000610B2 /* pagerViewTests.swift */; };
+		67F6FAB12C453884000610B2 /* pagerViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6FAB02C453884000610B2 /* pagerViewUITests.swift */; };
+		67F6FAB32C453884000610B2 /* pagerViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F6FAB22C453884000610B2 /* pagerViewUITestsLaunchTests.swift */; };
+		67F6FAC42C455E4B000610B2 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FAC02C455E4B000610B2 /* 4.jpg */; };
+		67F6FAC52C455E4B000610B2 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FAC12C455E4B000610B2 /* 1.jpg */; };
+		67F6FAC62C455E4B000610B2 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FAC22C455E4B000610B2 /* 2.jpg */; };
+		67F6FAC72C455E4B000610B2 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 67F6FAC32C455E4B000610B2 /* 3.jpg */; };
+		8625CCB49119BC7BF9E6D1C9 /* Pods_pagerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C9C34450BFD2064E8444D95 /* Pods_pagerView.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67F6FAA32C453884000610B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F6FA842C453882000610B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F6FA8B2C453882000610B2;
+			remoteInfo = pagerView;
+		};
+		67F6FAAD2C453884000610B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67F6FA842C453882000610B2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67F6FA8B2C453882000610B2;
+			remoteInfo = pagerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D7E1677DEEF8F1C0A6B9722 /* Pods-pagerViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerViewTests.debug.xcconfig"; path = "Target Support Files/Pods-pagerViewTests/Pods-pagerViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		364A118DAB4A8F76D8D3E01F /* Pods-pagerViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerViewTests.release.xcconfig"; path = "Target Support Files/Pods-pagerViewTests/Pods-pagerViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		3A854E1D9094C85E88FDDCB5 /* Pods-pagerView-pagerViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerView-pagerViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-pagerView-pagerViewUITests/Pods-pagerView-pagerViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		53961311C4C62AAF19619A99 /* Pods_pagerView_pagerViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pagerView_pagerViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F6FA8C2C453882000610B2 /* pagerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pagerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F6FA8F2C453882000610B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		67F6FA912C453882000610B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		67F6FA932C453882000610B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		67F6FA962C453882000610B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		67F6FA982C453884000610B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		67F6FA9B2C453884000610B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		67F6FA9D2C453884000610B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67F6FAA22C453884000610B2 /* pagerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pagerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F6FAA62C453884000610B2 /* pagerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagerViewTests.swift; sourceTree = "<group>"; };
+		67F6FAAC2C453884000610B2 /* pagerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = pagerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67F6FAB02C453884000610B2 /* pagerViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagerViewUITests.swift; sourceTree = "<group>"; };
+		67F6FAB22C453884000610B2 /* pagerViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pagerViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		67F6FAC02C455E4B000610B2 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		67F6FAC12C455E4B000610B2 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		67F6FAC22C455E4B000610B2 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		67F6FAC32C455E4B000610B2 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		756B766AA8BD71EE2E710B24 /* Pods-pagerView-pagerViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerView-pagerViewUITests.release.xcconfig"; path = "Target Support Files/Pods-pagerView-pagerViewUITests/Pods-pagerView-pagerViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E31109B4D87D89785DFEDC1 /* Pods_pagerViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pagerViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A68E74D3514120F07D6A864 /* Pods-pagerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerView.debug.xcconfig"; path = "Target Support Files/Pods-pagerView/Pods-pagerView.debug.xcconfig"; sourceTree = "<group>"; };
+		9C9C34450BFD2064E8444D95 /* Pods_pagerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pagerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA64B68A5B26EEAF163E854 /* Pods-pagerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerView.release.xcconfig"; path = "Target Support Files/Pods-pagerView/Pods-pagerView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67F6FA892C453882000610B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8625CCB49119BC7BF9E6D1C9 /* Pods_pagerView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F6FA9F2C453884000610B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ADEAD41F5CC2C87C01F21F2 /* Pods_pagerViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F6FAA92C453884000610B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD82EE98D9E54526556C235 /* Pods_pagerView_pagerViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E9E325FDA6A59432F147C83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C9C34450BFD2064E8444D95 /* Pods_pagerView.framework */,
+				53961311C4C62AAF19619A99 /* Pods_pagerView_pagerViewUITests.framework */,
+				7E31109B4D87D89785DFEDC1 /* Pods_pagerViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67F6FA832C453882000610B2 = {
+			isa = PBXGroup;
+			children = (
+				67F6FA8E2C453882000610B2 /* pagerView */,
+				67F6FAA52C453884000610B2 /* pagerViewTests */,
+				67F6FAAF2C453884000610B2 /* pagerViewUITests */,
+				67F6FA8D2C453882000610B2 /* Products */,
+				CBCA46A8C5351F818064A115 /* Pods */,
+				2E9E325FDA6A59432F147C83 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67F6FA8D2C453882000610B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67F6FA8C2C453882000610B2 /* pagerView.app */,
+				67F6FAA22C453884000610B2 /* pagerViewTests.xctest */,
+				67F6FAAC2C453884000610B2 /* pagerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67F6FA8E2C453882000610B2 /* pagerView */ = {
+			isa = PBXGroup;
+			children = (
+				67F6FABF2C455DEC000610B2 /* Resources */,
+				67F6FA8F2C453882000610B2 /* AppDelegate.swift */,
+				67F6FA912C453882000610B2 /* SceneDelegate.swift */,
+				67F6FA932C453882000610B2 /* ViewController.swift */,
+				67F6FA952C453882000610B2 /* Main.storyboard */,
+				67F6FA9A2C453884000610B2 /* LaunchScreen.storyboard */,
+				67F6FA9D2C453884000610B2 /* Info.plist */,
+			);
+			path = pagerView;
+			sourceTree = "<group>";
+		};
+		67F6FAA52C453884000610B2 /* pagerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				67F6FAA62C453884000610B2 /* pagerViewTests.swift */,
+			);
+			path = pagerViewTests;
+			sourceTree = "<group>";
+		};
+		67F6FAAF2C453884000610B2 /* pagerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				67F6FAB02C453884000610B2 /* pagerViewUITests.swift */,
+				67F6FAB22C453884000610B2 /* pagerViewUITestsLaunchTests.swift */,
+			);
+			path = pagerViewUITests;
+			sourceTree = "<group>";
+		};
+		67F6FABF2C455DEC000610B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				67F6FAC12C455E4B000610B2 /* 1.jpg */,
+				67F6FAC22C455E4B000610B2 /* 2.jpg */,
+				67F6FAC32C455E4B000610B2 /* 3.jpg */,
+				67F6FAC02C455E4B000610B2 /* 4.jpg */,
+				67F6FA982C453884000610B2 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CBCA46A8C5351F818064A115 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A68E74D3514120F07D6A864 /* Pods-pagerView.debug.xcconfig */,
+				BEA64B68A5B26EEAF163E854 /* Pods-pagerView.release.xcconfig */,
+				3A854E1D9094C85E88FDDCB5 /* Pods-pagerView-pagerViewUITests.debug.xcconfig */,
+				756B766AA8BD71EE2E710B24 /* Pods-pagerView-pagerViewUITests.release.xcconfig */,
+				1D7E1677DEEF8F1C0A6B9722 /* Pods-pagerViewTests.debug.xcconfig */,
+				364A118DAB4A8F76D8D3E01F /* Pods-pagerViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		67F6FA8B2C453882000610B2 /* pagerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F6FAB62C453884000610B2 /* Build configuration list for PBXNativeTarget "pagerView" */;
+			buildPhases = (
+				EA18E31EB9D1E00A36D6351B /* [CP] Check Pods Manifest.lock */,
+				67F6FA882C453882000610B2 /* Sources */,
+				67F6FA892C453882000610B2 /* Frameworks */,
+				67F6FA8A2C453882000610B2 /* Resources */,
+				DED151AA9252A45CC463B09A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pagerView;
+			productName = pagerView;
+			productReference = 67F6FA8C2C453882000610B2 /* pagerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67F6FAA12C453884000610B2 /* pagerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F6FAB92C453884000610B2 /* Build configuration list for PBXNativeTarget "pagerViewTests" */;
+			buildPhases = (
+				CC3D5F1963541A0AA27E3A2F /* [CP] Check Pods Manifest.lock */,
+				67F6FA9E2C453884000610B2 /* Sources */,
+				67F6FA9F2C453884000610B2 /* Frameworks */,
+				67F6FAA02C453884000610B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F6FAA42C453884000610B2 /* PBXTargetDependency */,
+			);
+			name = pagerViewTests;
+			productName = pagerViewTests;
+			productReference = 67F6FAA22C453884000610B2 /* pagerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		67F6FAAB2C453884000610B2 /* pagerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67F6FABC2C453884000610B2 /* Build configuration list for PBXNativeTarget "pagerViewUITests" */;
+			buildPhases = (
+				D090D9901705F8DDC6B38E85 /* [CP] Check Pods Manifest.lock */,
+				67F6FAA82C453884000610B2 /* Sources */,
+				67F6FAA92C453884000610B2 /* Frameworks */,
+				67F6FAAA2C453884000610B2 /* Resources */,
+				79C787D075DB5AA5EBB27CE6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67F6FAAE2C453884000610B2 /* PBXTargetDependency */,
+			);
+			name = pagerViewUITests;
+			productName = pagerViewUITests;
+			productReference = 67F6FAAC2C453884000610B2 /* pagerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67F6FA842C453882000610B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					67F6FA8B2C453882000610B2 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					67F6FAA12C453884000610B2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 67F6FA8B2C453882000610B2;
+					};
+					67F6FAAB2C453884000610B2 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 67F6FA8B2C453882000610B2;
+					};
+				};
+			};
+			buildConfigurationList = 67F6FA872C453882000610B2 /* Build configuration list for PBXProject "pagerView" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67F6FA832C453882000610B2;
+			productRefGroup = 67F6FA8D2C453882000610B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67F6FA8B2C453882000610B2 /* pagerView */,
+				67F6FAA12C453884000610B2 /* pagerViewTests */,
+				67F6FAAB2C453884000610B2 /* pagerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67F6FA8A2C453882000610B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F6FAC52C455E4B000610B2 /* 1.jpg in Resources */,
+				67F6FA992C453884000610B2 /* Assets.xcassets in Resources */,
+				67F6FAC62C455E4B000610B2 /* 2.jpg in Resources */,
+				67F6FA9C2C453884000610B2 /* Base in Resources */,
+				67F6FA972C453882000610B2 /* Base in Resources */,
+				67F6FAC42C455E4B000610B2 /* 4.jpg in Resources */,
+				67F6FAC72C455E4B000610B2 /* 3.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F6FAA02C453884000610B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F6FAAA2C453884000610B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79C787D075DB5AA5EBB27CE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerView-pagerViewUITests/Pods-pagerView-pagerViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerView-pagerViewUITests/Pods-pagerView-pagerViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pagerView-pagerViewUITests/Pods-pagerView-pagerViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC3D5F1963541A0AA27E3A2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pagerViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D090D9901705F8DDC6B38E85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pagerView-pagerViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED151AA9252A45CC463B09A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerView/Pods-pagerView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerView/Pods-pagerView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pagerView/Pods-pagerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA18E31EB9D1E00A36D6351B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pagerView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67F6FA882C453882000610B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F6FA942C453882000610B2 /* ViewController.swift in Sources */,
+				67F6FA902C453882000610B2 /* AppDelegate.swift in Sources */,
+				67F6FA922C453882000610B2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F6FA9E2C453884000610B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F6FAA72C453884000610B2 /* pagerViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67F6FAA82C453884000610B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F6FAB12C453884000610B2 /* pagerViewUITests.swift in Sources */,
+				67F6FAB32C453884000610B2 /* pagerViewUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67F6FAA42C453884000610B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F6FA8B2C453882000610B2 /* pagerView */;
+			targetProxy = 67F6FAA32C453884000610B2 /* PBXContainerItemProxy */;
+		};
+		67F6FAAE2C453884000610B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67F6FA8B2C453882000610B2 /* pagerView */;
+			targetProxy = 67F6FAAD2C453884000610B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		67F6FA952C453882000610B2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67F6FA962C453882000610B2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		67F6FA9A2C453884000610B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				67F6FA9B2C453884000610B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		67F6FAB42C453884000610B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		67F6FAB52C453884000610B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67F6FAB72C453884000610B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A68E74D3514120F07D6A864 /* Pods-pagerView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U84KVP7AF4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pagerView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movePage.pagerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67F6FAB82C453884000610B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA64B68A5B26EEAF163E854 /* Pods-pagerView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U84KVP7AF4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = pagerView/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movePage.pagerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67F6FABA2C453884000610B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7E1677DEEF8F1C0A6B9722 /* Pods-pagerViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movePage.pagerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pagerView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pagerView";
+			};
+			name = Debug;
+		};
+		67F6FABB2C453884000610B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 364A118DAB4A8F76D8D3E01F /* Pods-pagerViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movePage.pagerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pagerView.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/pagerView";
+			};
+			name = Release;
+		};
+		67F6FABD2C453884000610B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A854E1D9094C85E88FDDCB5 /* Pods-pagerView-pagerViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movePage.pagerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pagerView;
+			};
+			name = Debug;
+		};
+		67F6FABE2C453884000610B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 756B766AA8BD71EE2E710B24 /* Pods-pagerView-pagerViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = movePage.pagerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = pagerView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67F6FA872C453882000610B2 /* Build configuration list for PBXProject "pagerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F6FAB42C453884000610B2 /* Debug */,
+				67F6FAB52C453884000610B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F6FAB62C453884000610B2 /* Build configuration list for PBXNativeTarget "pagerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F6FAB72C453884000610B2 /* Debug */,
+				67F6FAB82C453884000610B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F6FAB92C453884000610B2 /* Build configuration list for PBXNativeTarget "pagerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F6FABA2C453884000610B2 /* Debug */,
+				67F6FABB2C453884000610B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67F6FABC2C453884000610B2 /* Build configuration list for PBXNativeTarget "pagerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67F6FABD2C453884000610B2 /* Debug */,
+				67F6FABE2C453884000610B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 67F6FA842C453882000610B2 /* Project object */;
+}
