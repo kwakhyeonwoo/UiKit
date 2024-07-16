@@ -1,0 +1,15 @@
+텍스트 입력해서 검색을 하면 해당 뷰로 넘어가는 프로젝트
+
+
+이미지, 텍스트, 입력 다 하나의 uiview에 넣음으로 관리 
+위에 앵커를 걸고 padding 0으로 설정 후 이미지 Constraints에서 Horizontal부분 클릭 후 Second.Item에서 super.view가 아닌 이미지로 변경 후 constant를 0으로 변경하면 이미지의 크기와 일치 
+
+func viewWillAppear(){} - 화면이 전환될 때 사용하는 메소드 override, super가 같이 사용 되어야 한다. 
+viewWillAppear()가 사용되면 viewWillDisappear()도 무조건 같이 사용 되어야 한다
+
+NotificationCenter - 옵저버 패턴을 통해 NotificationCenter에 등록된 이벤트들은 무조건 행동을 취하는 것 
+
+prepare(){} - 클릭하기 전 스토리보드에서 텍스트를 입력하고 화면을 넘길때 prepare를 통해 텍스트의 값도 같이 넘김
+guard let을 통해 언래핑을 해줘야 함 
+
+
