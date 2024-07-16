@@ -1,0 +1,6 @@
+framework module Pods_APIConnectUser {
+  umbrella header "Pods-APIConnectUser-umbrella.h"
+
+  export *
+  module * { export * }
+}

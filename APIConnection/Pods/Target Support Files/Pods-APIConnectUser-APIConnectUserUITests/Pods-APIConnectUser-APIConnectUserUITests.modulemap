@@ -1,0 +1,6 @@
+framework module Pods_APIConnectUser_APIConnectUserUITests {
+  umbrella header "Pods-APIConnectUser-APIConnectUserUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
