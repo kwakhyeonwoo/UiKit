@@ -1,0 +1,9 @@
+Alamofire연동해보기 
+
+Postman에 쿼리랑 값을 넣고 swift에서 로그에 띄우기
+서버연동시 에러 나오게 하는 출력문 실행
+
+Get방식으로 [Request], [Response] 불러오기
+
+API가 Request할때 adapt(){}, retry(){}를 필수로 구현해야 함
+Completion설정을 필수로 해줘야 하며, 안 할 경우 멈춰있음
