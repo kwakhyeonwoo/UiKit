@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'APIConnectUser' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for APIConnectUser
+
+  target 'APIConnectUserTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'APIConnectUserUITests' do
+    # Pods for testing
+  end
+  pod 'Toast-Swift', '~> 5.1.1'
+  pod 'Alamofire', '~> 5.2'
+
+end
