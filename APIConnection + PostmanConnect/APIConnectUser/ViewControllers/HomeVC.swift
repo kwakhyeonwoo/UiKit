@@ -165,24 +165,39 @@ class HomeVC: BaseVC, UISearchBarDelegate, UIGestureRecognizerDelegate {
         
         switch searchFilterSegment.selectedSegmentIndex {
         case 0:
-            urlToCall = MySearchRouter.searchPhotos(term: userInput)
+//            urlToCall = MySearchRouter.searchPhotos(term: userInput)
+            
+            MyAlamofireManager
+                .shared
+                .getPhotos(searchTerm: userInput,
+                           completion: { result in
+                                switch result {
+                                case .success(let fetchedPhotos):
+                                    print("HomeVC - getPhotos.success - fetchedPhotos.count : \(fetchedPhotos.count)")
+                                case .failure(let error):
+                                    print ("HomeVC - getPhotos. failure - error : \(error.rawValue) ")
+                                    
+                                }
+                
+            })
+            
         case 1:
             urlToCall = MySearchRouter.searchUsers(term: userInput)
         default:
             print("default")
         }
         
-        //urlToCall의 값이 존재할때만 urlConvertible실행
-        if let urlConvertible = urlToCall{
-            MyAlamofireManager
-                .shared
-                .session
-                .request(urlConvertible)
-                .validate(statusCode: 200..<401)
-                .responseJSON(completionHandler: { response in
-                debugPrint(response)
-            })
-        }
+//        //urlToCall의 값이 존재할때만 urlConvertible실행
+//        if let urlConvertible = urlToCall{
+//            MyAlamofireManager
+//                .shared
+//                .session
+//                .request(urlConvertible)
+//                .validate(statusCode: 200..<401)
+//                .responseJSON(completionHandler: { response in
+//                debugPrint(response)
+//            })
+//        }
         
         //한꺼번에 데이터 처리 요청
         
